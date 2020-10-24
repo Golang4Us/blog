@@ -692,7 +692,7 @@ body .navbar{
 
 blockquote {
    font-style: italic;
-   border-left: 3px solid #2288bb !important;
+   border-left: 3px solid #00ADD8 !important;
    padding-left: 20px;
    margin-bottom: 20px;
    font-family: Georgia, Times, serif;
@@ -739,7 +739,7 @@ div.PopularPosts h2 {
 .code {
     background-color: #f3f3f3;
     margin: 14px 0;
-    border-left: 3px solid #007D9C !important;
+    border-left: 3px solid #00ADD8 !important;
     padding: 14px;
     font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
     font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400;
@@ -926,7 +926,7 @@ br {
     padding: 10px;
     margin: 10px 0;
     width: 92%;
-    color: #2288bb;
+    color: #00ADD8;
     font-weight: 400;
     overflow: hidden;
     vertical-align: middle;
@@ -936,7 +936,7 @@ br {
 
 .tip:before {
     content: 'TIP: ';
-    color: #2288bb;
+    color: #00ADD8;
     padding: 3px 0;
     font-weight: 600;
 }
@@ -2338,9 +2338,10 @@ Tips to get started learn the Go programming language
   </div>
 </b:includable>
             </b:widget>
-            <b:widget id='HTML4' locked='false' mobile='yes' title='' type='HTML'>
+            <b:widget id='HTML3' locked='false' mobile='yes' title='' type='HTML'>
               <b:widget-settings>
-                <b:widget-setting name='content'><![CDATA[<div class="sharethis-inline-share-buttons"></div>]]></b:widget-setting>
+                <b:widget-setting name='content'>&lt;div class=&quot;subheader my2&quot;&gt;Any comment about this page? Please &lt;a href=&quot;https://twitter.com/golang4us&quot; target=&quot;_blank&quot;&gt;contact us on Twitter&lt;/a&gt;
+&lt;/div&gt;</b:widget-setting>
               </b:widget-settings>
               <b:includable id='main'>
   <!-- only display title if it's non-empty -->
@@ -2354,10 +2355,9 @@ Tips to get started learn the Go programming language
   <b:include name='quickedit'/>
 </b:includable>
             </b:widget>
-            <b:widget id='HTML3' locked='false' mobile='yes' title='' type='HTML'>
+            <b:widget id='HTML4' locked='false' mobile='yes' title='' type='HTML'>
               <b:widget-settings>
-                <b:widget-setting name='content'>&lt;div class=&quot;subheader my2&quot;&gt;Any comment about this page? Please &lt;a href=&quot;https://twitter.com/brunohilden&quot; target=&quot;_blank&quot;&gt;contact us on Twitter&lt;/a&gt;
-&lt;/div&gt;</b:widget-setting>
+                <b:widget-setting name='content'><![CDATA[<div class="sharethis-inline-share-buttons"></div>]]></b:widget-setting>
               </b:widget-settings>
               <b:includable id='main'>
   <!-- only display title if it's non-empty -->
@@ -2591,6 +2591,32 @@ Tips to get started learn the Go programming language
     <b:include name='quickedit'/>
   </b:includable>
   </b:widget>
+  <b:widget id='FollowByEmail1' locked='false' title='Follow by Email' type='FollowByEmail'>
+    <b:includable id='main'>
+  <b:if cond='data:title != &quot;&quot;'><h2 class='title'><data:title/></h2></b:if>
+  <div class='widget-content'>
+    <div class='follow-by-email-inner'>
+      <form action='https://feedburner.google.com/fb/a/mailverify' expr:onsubmit='&quot;window.open(\&quot;https://feedburner.google.com/fb/a/mailverify?uri=&quot; + data:feedPath + &quot;\&quot;, \&quot;popupwindow\&quot;, \&quot;scrollbars=yes,width=550,height=520\&quot;); return true&quot;' method='post' target='popupwindow'>
+        <table width='100%'>
+          <tr>
+            <td>
+              <input class='follow-by-email-address' name='email' placeholder='Email address...' type='text'/>
+            </td>
+            <td width='64px'>
+              <input class='follow-by-email-submit' type='submit' value='Submit'/>
+            </td>
+          </tr>
+        </table>
+        <input expr:value='data:feedPath' name='uri' type='hidden'/>
+        <input name='loc' type='hidden' value='en_US'/>
+      </form>
+    </div>
+  </div>
+  <span class='item-control blog-admin'>
+    <b:include name='quickedit'/>
+  </span>
+</b:includable>
+  </b:widget>
   <b:widget id='HTML7' locked='false' title='' type='HTML'>
     <b:widget-settings>
       <b:widget-setting name='content'>&lt;h2&gt;Follow Us&lt;/h2&gt;
@@ -2656,7 +2682,7 @@ Tips to get started learn the Go programming language
   </b:widget>
   <b:widget id='PopularPosts1' locked='false' title='Popular this Week' type='PopularPosts'>
     <b:widget-settings>
-      <b:widget-setting name='numItemsToShow'>10</b:widget-setting>
+      <b:widget-setting name='numItemsToShow'>3</b:widget-setting>
       <b:widget-setting name='showThumbnails'>true</b:widget-setting>
       <b:widget-setting name='showSnippets'>true</b:widget-setting>
       <b:widget-setting name='timeRange'>LAST_WEEK</b:widget-setting>
@@ -2730,7 +2756,7 @@ Tips to get started learn the Go programming language
 </b:section-contents><b:section-contents id='footer-1'>
   <b:widget id='HTML6' locked='false' mobile='yes' title='' type='HTML'>
     <b:widget-settings>
-      <b:widget-setting name='content'><![CDATA[Is this website helpful to you? Please consider sharing posts and <a href="/p/contact.html">sending your feedback</a>. Thanks!]]></b:widget-setting>
+      <b:widget-setting name='content'><![CDATA[Is this website helpful to you? Please consider subscribing, sharing posts, and <a href="/p/contact.html" target="_blank">sending your feedback</a>.]]></b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
   <!-- only display title if it's non-empty -->
