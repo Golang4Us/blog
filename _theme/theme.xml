@@ -1144,6 +1144,14 @@ td.tr-caption {
     font-family: Georgia, serif;
 }
 
+.rss {
+  background-color: #f57c00;
+  color: #white;
+  display: inline-block;
+  padding: 0 .8em;
+  margin-left: .8em;
+}
+
 ]]></b:skin>
     <b:template-skin>
       <b:variable default='960px' name='content.width' type='length' value='1020px'/>
@@ -1343,6 +1351,7 @@ Tips to get started learn the Go programming language
   &lt;a href=&quot;/p/contribute.html&quot;&gt;Contribute&lt;/a&gt; 
   &lt;a href=&quot;/p/about.html&quot;&gt;About Us&lt;/a&gt; 
   &lt;a href=&quot;/p/contact.html&quot;&gt;Contact&lt;/a&gt;
+  &lt;a href=&quot;https:/feeds/posts/default&quot; class=&quot;rss&quot; target=&quot;_blank&quot;&gt;RSS&lt;/a&gt;
 &lt;/div&gt;
 &lt;/div&gt;</b:widget-setting>
           </b:widget-settings>
@@ -2780,14 +2789,14 @@ Tips to get started learn the Go programming language
 &lt;a href=&quot;/p/about.html&quot;&gt;About Us&lt;/a&gt; |
 &lt;a href=&quot;/p/contact.html&quot;&gt;Contact&lt;/a&gt; |
 &lt;a href=&quot;//github.com/golang4us&quot; target=&quot;_blank&quot;&gt;GitHub&lt;/a&gt;  |
-&lt;a href=&quot;//www.golang4us.com/feeds/posts/default&quot; target=&quot;_blank&quot;&gt;RSS&lt;/a&gt;
- &lt;/p&gt;
+  &lt;a href=&quot;https:/feeds/posts/default&quot; class=&quot;rss&quot; target=&quot;_blank&quot;&gt;RSS&lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;
 Golang4Us | Tips to get started learn the Go programming language
 &lt;/p&gt;
 &lt;p&gt;2020 &#169; &lt;a href=&quot;//www.hildenco.com&quot; target=&quot;_blank&quot;&gt;HildenCo Software&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt; Made with 🧡 in Canada&lt;/p&gt;
+&lt;p&gt; Made with &#9829; in Canada&lt;/p&gt;
 
 &lt;/div&gt;</b:widget-setting>
     </b:widget-settings>
